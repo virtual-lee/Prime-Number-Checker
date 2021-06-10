@@ -21,7 +21,6 @@
 .title {
   width: 100vw;
   height: 125px;
-  /* height: 5vh; */
   background: hsl(0, 0%, 0%);
   color: hsl(208, 100%, 97%);
 }
@@ -60,8 +59,8 @@ form input {
   background-color: hsl(191, 93%, 40%);
   color: white;
   margin: auto;
-  width: 50%;
-  padding: 1vw;
+  width: 225px;
+  padding: 10px;
   font-size: 2rem;
   font-weight: bold;
   border: 2px solid white;
