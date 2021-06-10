@@ -5,16 +5,41 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Prime Numbers</title>
- <link rel="stylesheet" href="style.css">
- <script src="./app.js"></script>
+ <link rel="stylesheet" href="./style.css">
+ <script defer src="app.js"></script>
 </head>
 <body>
- <h1>Prime Number Checker</h1>
- <p>Welcome to the worlds greatest prime number checker.
+<div class="header">
+  <div class="title">
+   <h1>Prime Number Checker</h1>
+  </div>
+  <div class="main-text">
+   <p>Welcome to the worlds greatest prime number checker.
   No number is too big to check.
- </p>
- <input type="number" name="prime number" id="num">
- <p id="result"></p>
- <button type="submit">Submit</button>
+   </p>
+</div>
+ </div>
+ <br>
+ <form>
+  <p>Enter a whole number greater than 1, 
+  then click submit to get your result:
+  </p>
+  <br>
+  <input type="number" min="1" name="prime number" placeholder="Enter number here..." id="num">
+  <br>
+  <br>
+  <button data-modal-target="#modal" type="button" class="submit" onclick="primeNum()">Submit</button>
+ </form>
+ <!-- <button data-modal-target="#modal">modal</button> -->
+ <div class="modal" id="modal">
+  <div class="modal-header">
+   <div class="modal-num" id="num-input"></div>
+  </div>
+  <div class="modal-text" id="modal-body">
+   <p id="result"></p>
+   <button data-close-button class="close-button">close</button>
+  </div>
+ </div>
+ <div id="overlay"></div>
 </body>
 </html>
